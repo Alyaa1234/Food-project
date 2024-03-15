@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Recipe page</title>
+        <meta name="description" content="Recipe page content">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Leckerli+One&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+       <!-------------------------------------------------------------------nav bar--------------------------------------------------------------->
+       <!-- <nav class="navbar navbar-expand-lg bg-body-light mt-4 navigation">
+         <div class="container">
+              <a class="navbar-brand fs-3 me-5" href="index.html" style="font-family:'Leckerli One','cursive' !important; color:#eb4a36;">Kocina</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="index.html">Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="index.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="index.html">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2 border border-0" type="search" placeholder="Search" aria-label="Search" >
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="30" 
+                    height="30" 
+                    fill="currentColor" 
+                    class="bi bi-search mt-2" 
+                    viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <a class="btn btn-bg-light w-50" href="#" target="_blank" role="button">Sign in</a>
+                    <a class="btn btn-danger w-50 rounded-pill " href="#" target="_blank" role="button" style="background-color: #eb4a36;">Sign up</a>
+                  </form>
+              </div>
+          </div>
+       </nav> -->
+       <!----------------------------------------------------------------------- main ------------------------------------------------------------>
+       <div class="container main my-3">
+            <div class="row ">
+                <div class="img col-12 col-md-6 col-lg-5 mb-5">
+                    <img src="./imgs/head-2.jfif" class="col-12" alt="main-pic">   
+                </div>
+                <!-- <img src="./imgs/head-2.jfif" class=" col-12 col-md-5 col-lg-6 img-fluid" alt="main-pic">   -->
+                <div class="content-container col-12 col-md-6 col-lg-6">
+                    <h1 class="main-header">White calzones with marinara sauce</h1>
+                    <p>Supermarket brands of ricotta contain stabilizers, 
+                        which can give the cheese a gummy texture when baked. 
+                        Check the label and choose ricotta made with as few ingredients
+                         as possible.</p>
+                    <div  class="three-icons">
+                        <div class="a col-4 w-25 pe-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                             width="25" 
+                             height="25" 
+                             fill="rgb(74, 74, 74)" 
+                             class="bi bi-clock ms-4 my-3" 
+                             viewBox="0 0 16 16">
+                             <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                            </svg>
+                            <h6>Active Time</h6>
+                            <span>20 mins</span>
+                        </div>
+                        <div class="b col-4">
+                            <svg width="28" height="28" 
+                             viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg" 
+                             data-svg="future"
+                             class=" ms-3 my-3">
+                             <polyline points="19 2 18 2 18 6 14 6 14 7 19 7 19 2"></polyline>
+                             <path fill="none" stroke="rgb(74, 74, 74)" stroke-width="1.1" d="M18,6.548 C16.709,3.29 13.354,1 9.6,1 C4.6,1 0.6,5 0.6,10 C0.6,15 4.6,19 9.6,19 C14.6,19 18.6,15 18.6,10"></path>
+                             <rect x="9" y="4" width="1" height="7"></rect>
+                             <path d="M13.018,14.197 L9.445,10.625" fill="none" stroke="rgb(74, 74, 74)" stroke-width="1.1"></path>
+                            </svg>
+                            <h6>Total Time</h6>
+                            <span>50 mins</span> 
+                        </div>
+                        <div class="col-4 w-25 ps-4">
+                            <svg width="28" height="28" 
+                             viewBox="0 0 20 20" 
+                             xmlns="http://www.w3.org/2000/svg" 
+                             data-svg="users"
+                             class=" ms-2 my-3">
+                             <circle fill="none" stroke="rgb(74, 74, 74)" stroke-width="1.1" cx="7.7" cy="8.6" r="3.5"></circle>
+                             <path fill="none" stroke="rgb(74, 74, 74)" stroke-width="1.1" d="M1,18.1 C1.7,14.6 4.4,12.1 7.6,12.1 C10.9,12.1 13.7,14.8 14.3,18.3"></path>
+                             <path fill="none" stroke="rgb(74, 74, 74)" stroke-width="1.1" d="M11.4,4 C12.8,2.4 15.4,2.8 16.3,4.7 C17.2,6.6 15.7,8.9 13.6,8.9 C16.5,8.9 18.8,11.3 19.2,14.1"></path>
+                            </svg>
+                            <h6>Yield</h6>
+                            <span>Serves 4</span>
+                        </div>
+                    </div>
+                    <div class="last-row">
+                        <div>
+                            <p>Created by<a href="#"> Alex Williamns</a></p>
+                            <span>21 recipes</span>
+                        </div>
+                        <div class="icons">
+                            <a href="#" title="Save Recipe">
+                                <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="plus-circle">
+                                    <circle fill="none" stroke="rgb(120, 120, 120)" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle>
+                                    <line fill="none" stroke="rgb(120, 120, 120)" x1="9.5" y1="5" x2="9.5" y2="14"></line>
+                                    <line fill="none" stroke="rgb(120, 120, 120)" x1="5" y1="9.5" x2="14" y2="9.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" title="Shopping List">
+                                <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="cart">
+                                    <circle cx="7.3" cy="17.3" r="1.4" stroke="rgb(120, 120, 120)" fill="rgb(120, 120, 120)"></circle>
+                                    <circle cx="13.3" cy="17.3" r="1.4" stroke="rgb(120, 120, 120)" fill="rgb(120, 120, 120)"></circle>
+                                    <polyline fill="none" stroke="rgb(120, 120, 120)" points="0 2 3.2 4 5.3 12.5 16 12.5 18 6.5 8 6.5"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#" title="Print Recipe">
+                                <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="print">
+                                    <polyline fill="none" stroke="rgb(120, 120, 120)" points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline>
+                                    <polyline fill="none" stroke="rgb(120, 120, 120)" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline>
+                                    <rect fill="none" stroke="rgb(120, 120, 120)" width="11" height="6" x="4.5" y="11.5"></rect>
+                                    <rect width="8" height="1" x="6" y="13" stroke="rgb(120, 120, 120)" fill="rgb(120, 120, 120)"></rect>
+                                    <rect width="8" height="1" x="6" y="15" stroke="rgb(120, 120, 120)" fill="rgb(120, 120, 120)"></rect>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+       </div>
+
+       <!------------------------------------------------------------------ content-1 ------------------------------------------------------------>
+       <div class="content-1 container-lg">
+         <div class="row">
+
+             <!--------------------------------------------- articles ---------------------------->
+             <div class="articles col-lg-7 offset-lg-1">
+                <h4 class="art-header">How to Make It</h4>
+                <div class="step-cont">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#eb4a36" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </span>
+                    <div class="step-body">
+                        <div class="head">
+                            <span>1.STEP</span>
+                            <hr>
+                        </div>
+                        <p>
+                         Labour, of evaluated would he the a the our what is in the arduous sides 
+                         behavioural is which the have didn't kicked records the it framework by 
+                         the for traveler sure the can most well her. Entered have break himself cheek, 
+                         and activity, for bit of text.
+                        </p>
+                    </div>
+                </div>
+                <div class="step-cont">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#eb4a36" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </span>
+                    <div class="step-body">
+                        <div class="head">
+                            <span>2.STEP</span>
+                            <hr>
+                        </div>
+                        <p>
+                         Labour, of evaluated would he the a the our what is in the arduous sides 
+                         behavioural is which the have didn't kicked records the it framework by 
+                         the for traveler sure the can most well her. Entered have break himself cheek, 
+                         and activity, for bit of text.
+                        </p>
+                    </div>
+                </div>
+                <div class="step-cont">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#eb4a36" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </span>
+                    <div class="step-body">
+                        <div class="head">
+                            <span>3.STEP</span>
+                            <hr>
+                        </div>
+                        <p>
+                         Labour, of evaluated would he the a the our what is in the arduous sides 
+                         behavioural is which the have didn't kicked records the it framework by 
+                         the for traveler sure the can most well her. Entered have break himself cheek, 
+                         and activity, for bit of text.
+                        </p>
+                    </div>
+                </div>
+                <div class="step-cont">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#eb4a36" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                        </svg>
+                    </span>
+                    <div class="step-body">
+                        <div class="head">
+                            <span>4.STEP</span>
+                            <hr>
+                        </div>
+                        <p>
+                         Labour, of evaluated would he the a the our what is in the arduous sides 
+                         behavioural is which the have didn't kicked records the it framework by 
+                         the for traveler sure the can most well her. Entered have break himself cheek, 
+                         and activity, for bit of text.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="head-2">Comments</h4>
+                <div class="comments">
+                    <div class="waman-div mb-4 col-lg-11">
+                        <div class="header">
+                                <div class="static">  
+                                   <img src="./imgs/waman.jfif" alt="user-pic"> 
+                                   <div class="text">
+                                      <h5  class="fw-bold">Tom Solender</h5>
+                                      <span>12 days ago</span>
+                                      <div class="stars-icons">
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                         fill="currentColor" 
+                                         class="bi bi-star-fill text-warning" 
+                                         viewBox="0 0 16 16">
+                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                         fill="currentColor" 
+                                         class="bi bi-star-fill text-warning" 
+                                         viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                          fill="currentColor" 
+                                         class="bi bi-star-fill text-warning" 
+                                         viewBox="0 0 16 16">
+                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" 
+                                         height="16" 
+                                          fill="currentColor" 
+                                         class="bi bi-star-fill text-warning" 
+                                         viewBox="0 0 16 16">
+                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                         width="16" height="16" 
+                                         fill="currentColor" 
+                                         class="bi bi-star" 
+                                         viewBox="0 0 16 16">
+                                         <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                        </svg>                                                                       
+                                       </div>
+                                   </div>                                 
+                                </div>
+                                <div class="dynamic">
+                                    <span>Reply</span>
+                                </div>
+                        </div>
+                        <div class="body">
+                            <p>
+                                Lorem ipsum dolor sit amet, 
+                                consetetur sadipscing elitr, 
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="special-comments">
+                        <div class="man-div mb-4">
+                            <div class="header">
+                                    <div class="static">  
+                                       <img src="./imgs/man.jfif" alt="user-pic">  
+                                       <div class="text">
+                                          <h5  class="fw-bold">Tom Solender</h5>
+                                          <span>12 days ago</span>
+                                       </div>                                 
+                                    </div>
+                                    <div class="dynamic">
+                                        <span>Reply</span>
+                                    </div>
+                            </div>
+                            <div class="body">
+                                Lorem ipsum dolor sit amet, 
+                                consetetur sadipscing elitr, 
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                        <div class="waman-div mb-4 ">
+                            <div class="header">
+                                    <div class="static">  
+                                       <img src="./imgs/waman.jfif" alt="user-pic"> 
+                                       <div class="text">
+                                          <h5  class="fw-bold">Tom Solender</h5>
+                                          <span>12 days ago</span>
+                                          <div class="stars-icons">
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                             width="16" 
+                                             height="16" 
+                                             fill="currentColor" 
+                                             class="bi bi-star-fill text-warning" 
+                                             viewBox="0 0 16 16">
+                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                             width="16" 
+                                             height="16" 
+                                             fill="currentColor" 
+                                             class="bi bi-star-fill text-warning" 
+                                             viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                             width="16" 
+                                             height="16" 
+                                              fill="currentColor" 
+                                             class="bi bi-star-fill text-warning" 
+                                             viewBox="0 0 16 16">
+                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                             width="16" 
+                                             height="16" 
+                                              fill="currentColor" 
+                                             class="bi bi-star-fill text-warning" 
+                                             viewBox="0 0 16 16">
+                                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                             width="16" height="16" 
+                                             fill="currentColor" 
+                                             class="bi bi-star" 
+                                             viewBox="0 0 16 16">
+                                             <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                            </svg>                                                                       
+                                           </div>
+                                       </div>                                 
+                                    </div>
+                                    <div class="dynamic">
+                                        <span>Reply</span>
+                                    </div>
+                            </div>
+                            <div class="body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, 
+                                    consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <!---------------------------------------------- aside ------------------------------>
+             <div class="aside col-lg-4"><!-- bg-success-->
+                    <h4 class="aside-header">Ingredients</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1 pound fresh prepared pizza dough</li>
+                        <li class="list-group-item">6 ounces shredded mozzarella cheese</li>
+                        <li class="list-group-item">3/4 cup of ricotta cheese</li>
+                        <li class="list-group-item">1 large egg yolk</li>
+                        <li class="list-group-item">1/2 teaspoon lemon zest</li>
+                        <li class="list-group-item">2 finely grated garlic cloves</li>
+                        <li class="list-group-item">1/2 teaspoon kosher salt</li>
+                        <li class="list-group-item">1/4 teaspoon black pepper</li>
+                        <li class="list-group-item">1 large egg</li>
+                        <li class="list-group-item">1 teaspoon dried Italian seasoning</li>
+                    </ul>
+                    <h4 class="tags-header">Tags</h4>
+                    <div class="tags-container">
+                        <a href="#">
+                            <div>DINNER</div>
+                        </a>
+                        <a href="#">
+                            <div>CASSEROLE</div>
+                        </a>
+                        <a href="#">
+                            <div>PARTY</div>
+                        </a>
+                        <a href="#">
+                            <div>MEAT</div>
+                        </a>
+                    </div>
+                    <h4 class="icons-header">Share Recipe</h4>
+                    <div class="icons-container mb-5">
+                       <a href="index.html" title="#" target="_blank">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#3b5998 " class="bi bi-facebook me-2" viewBox="0 0 16 16">
+                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                         </svg>
+                       </a>
+                       <a href="index.html" title="#" target="_blank">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill=" #0e76a8" class="bi bi-linkedin me-2" viewBox="0 0 16 16">
+                             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                         </svg>
+                        </a>
+                        <a href="index.html" title="#" target="_blank">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#1da1f2" class="bi bi-twitter me-2" viewBox="0 0 16 16">
+                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                         </svg>
+                        </a>
+                    </div>
+             </div>
+
+         </div>    
+       </div>    
+
+       <!------------------------------------------------------------------ content-2 ------------------------------------------------------------->
+       <div class="container-fluid content-2 mb-5">
+            <div class="row content-row">
+             <div class="galary">
+                    <h4>Other Recipes You May Like</h4>
+                   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 my-4">
+
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                            <div class="card h-100 border-0 ">                            
+                                <img src="./imgs/1.jfif" class="card-img-top rounded" alt="pic-1"> 
+                                <div class="card-body py-1 px-1">
+                                <h6 class="card-title">Chef John's Turkey Sloppy Joes</h6>
+                                <div class="card-text" >
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="16" 
+                                        height="16" 
+                                        fill="currentColor" 
+                                        class="bi bi-star-fill text-warning" 
+                                        viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    5.1(75)
+                                    </span>
+                                    <span >by John Keller</span>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            </a> 
+
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                            <div class="card h-100 border-0 ">
+                                <img src="./imgs/2.jfif" class="card-img-top rounded" alt="pic-2">
+                                <div class="card-body py-1 px-1">
+                                <h6 class="card-title">Brown Sugar Meatloaf</h6>
+                                <div class="card-text">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="16" 
+                                        height="16" 
+                                        fill="currentColor" 
+                                        class="bi bi-star-fill text-warning" 
+                                        viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    3.0(94)
+                                    </span>
+                                    <span>by Danial Caleem</span>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            </a>
+                            
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                            <div class="card h-100 border-0 ">
+                                <img src="./imgs/3.jfif" class="card-img-top rounded " alt="pic-3">
+                                <div class="card-body py-1 px-1">
+                                <h6 class="card-title">Awesome Slow Cooker Pot Roast</h6>
+                                <div class="card-text">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="16" 
+                                        height="16" 
+                                        fill="currentColor" 
+                                        class="bi bi-star-fill text-warning" 
+                                        viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    4.5(153)
+                                    </span>
+                                    <span> by Janet Small</span>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            </a> 
+
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                            <div class="card h-100 border-0 ">
+                                <img src="./imgs/4.jfif" class="card-img-top rounded" alt="pic-4">
+                                <div class="card-body py-1 px-1">
+                                <h5 class="card-title">Broiled Tilapia Parmesan</h5>
+                                <div class="card-text">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="16" 
+                                        height="16" 
+                                        fill="currentColor" 
+                                        class="bi bi-star-fill text-warning" 
+                                        viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    5.0(524)
+                                    </span>
+                                    <span> by Aleaxa Dorchest</span>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            </a>
+
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                                <div class="card h-100 border-0 ">
+                                <img src="./imgs/5.jfif" class="card-img-top rounded" alt="pic-5">
+                                <div class="card-body py-1 px-1">
+                                    <h6 class="card-title">Baked Teriyaki Chicken</h6>
+                                    <div class="card-text">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="16" 
+                                            height="16" 
+                                            fill="currentColor" 
+                                            class="bi bi-star-fill text-warning" 
+                                            viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        4.6(404)
+                                        </span>
+                                        <span>by Ben Kaller</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </a> 
+
+                            <a href="index.html">
+                            <div class="pic col px-2 ">
+                                <div class="card h-100 border-0 ">
+                                <img src="./imgs/6.jfif" class="card-img-top rounded" alt="pic-6">
+                                <div class="card-body py-1 px-1">
+                                    <h6 class="card-title">Zesty Slow Cooker Chicken</h6>
+                                    <div class="card-text">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="16" 
+                                            height="16" 
+                                            fill="currentColor" 
+                                            class="bi bi-star-fill text-warning" 
+                                            viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        3.9(629)
+                                        </span>
+                                        <span>by Sam Brown</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </a>
+                            
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                                <div class="card h-100 border-0 ">
+                                <img src="./imgs/7.jfif" class="card-img-top rounded " alt="pic-7">
+                                <div class="card-body py-1 px-1">
+                                    <h6 class="card-title">Rosemary Ranch Chicken Kabobs</h6>
+                                    <div class="card-text">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="16" 
+                                            height="16" 
+                                            fill="currentColor" 
+                                            class="bi bi-star-fill text-warning" 
+                                            viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        3.6(149)
+                                        </span>
+                                        <span>by Theresa Samuel</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </a> 
+
+                            <a href="index.html">
+                            <div class="pic col px-2">
+                                <div class="card h-100 border-0 ">
+                                <img src="./imgs/8.jfif" class="card-img-top rounded" alt="pic-8">
+                                <div class="card-body py-1 px-1">
+                                    <h6 class="card-title">Slow Cooker Pulled Pork</h6>
+                                    <div class="card-text">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="16" 
+                                            height="16" 
+                                            fill="currentColor" 
+                                            class="bi bi-star-fill text-warning" 
+                                            viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        2.9(309)
+                                        </span>
+                                        <span>by Adam Brown</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </a> 
+                    </div>
+                </div>
+            </div>    
+       </div>
+
+       <!------------------------------------------------------------------- footer --------------------------------------------------------------->
+       <div class="container footer">
+          <div class="row f-row">
+              <a class="logo me-5  mb-2 w-25" href="index.html">Kocina</a>
+              <div class="contact-icons">
+                  <a href='https://www.facebook.com/' title="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="25" 
+                    height="25" 
+                    fill="currentColor" 
+                    class="bi bi-facebook text-primary ms-3" 
+                    viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/" title="instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25" 
+                    height="25" 
+                    fill="currentColor"
+                        class="bi bi-instagram text-danger ms-3" 
+                        viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                  </a>
+                  <a href="mailto:info@blacompany.com"  title="E-mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="25" 
+                        height="25" 
+                        fill="currentColor" 
+                        class="bi bi-twitter text-info ms-3" 
+                        viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                  </a>
+               </div>
+          </div>
+         <div class="row s-row my-5">
+              <ul  class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3" type="none">
+                    <li>
+                        <a href="index.html">Presentations</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Professionals</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Stores</a>
+                    </li>
+              </ul>
+              <ul  class="col-12 col-sm-6 col-md-4  col-lg-3 mt-3" type="none">
+                    <li><a href="index.html">Webinars</a></li>
+                    <li><a href="index.html">Workshops</a></li>
+                    <li><a href="index.html">Local Meetups</a></li>
+              </ul>
+              <ul  class="col-12 col-sm-6 col-md-4  col-lg-3 mt-3" type="none">
+                    <li><a href="index.html">Our Initiatives</a></li>
+                    <li><a href="index.html">Giving Back</a></li>
+                    <li><a href="index.html">Communities</a></li>
+              </ul>
+              <ul  class="col-12 col-sm-6 col-md-4  col-lg-3 mt-3" type="none">
+                    <li><a href="index.html">Contact Form</a></li>
+                    <li><a href="index.html">Work With Us</a></li>
+                    <li><a href="index.html">Visit Us</a></li>
+              </ul>
+          </div>
+       </div>
+
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,220 @@
+body{
+    font-family: "Montserrat", "san-serif"!important;
+}
+/****************************************************************************** section-1 ***************************************************************************/    
+.sec-1 .img-card{
+    height: 45vh;
+    /* background-color: black; */
+    background-image: url("./imgs/headeer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 3%;
+    margin-right: 3%;
+    color:white;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.sec-1 .img-card-content{
+    max-width:40%;
+    min-width:60%;
+    min-height: 30vh;
+    position:relative;
+    left:7%;
+    top:15%;
+}
+.sec-1 .card-title{
+    width:60%;
+    min-width:300px;
+    font-weight: bolder;
+    margin-bottom: 3%;
+}
+.sec-1 .img-card a{
+    margin-top: 3%;
+    text-decoration: none;
+    font-weight: bold;
+    color:white; 
+}
+.sec-1 .img-card a:hover{
+    margin-left: 3%;
+    color: #eb4a36 ;
+}
+/******************************************************************************** section-2 ***************************************************************************/  
+/*aside*/ 
+.sec-2 .aside .header{
+    font-weight: bold;
+}
+.sec-2 .aside .group{
+    border: none;
+}
+.accordion-body p a{
+    text-decoration: none;
+    color:#000;
+    font-size: 14px;
+}
+.accordion-body p a:hover{
+    color:#eb4a36;
+}
+/*galary*/
+.galary .f-row{
+    width:100%;
+    height: 45px;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+.galary .f-row form{
+    display: flex;
+    gap:4px;
+    width:65%;
+    margin-bottom: 5px;
+}
+.galary .f-row form input{
+    background-color: #f9f5f4;
+    width:80%; 
+    height: 45px
+}
+.galary .f-row select{
+    border:none;
+    width:160px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #eb4a36 ;
+}
+.galary .pic-row .pic .card-title{
+    font-size:14px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+.galary .pic-row a{
+    text-decoration: none;
+}
+.pic .card-text{
+    display:flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.galary .pic-row .counter{
+    width:25%;
+    position:relative;
+    left:35%;
+}
+.galary .pic-row .counter a{
+    border:none;
+    color:#000;
+    background-color: white;
+}
+/******************************************************************************** section-3 ***************************************************************************/  
+.sec-3 .f-row{
+    justify-content:space-between; 
+}
+.sec-3 .f-row h1{
+    width:15%;
+}
+.sec-3 .f-row select{
+    border-radius: 0%;
+    width:130px; 
+    height: 40px;
+    background-color: #eb4a36;
+}
+ /* videos-row  */
+.sec-3 .s-row {
+   justify-content:space-evenly;
+}
+.sec-3 a{
+    text-decoration: none;
+    color:white
+}
+.sec-3 .vid{
+ background-color: bisque;
+ height: 400px;
+ width:300px;
+ max-width: 45%;
+ border-radius: 5%;
+}
+.sec-3 .vid .icon{
+    position:relative;
+    left:40%;
+    top:40%;
+}
+.sec-3 .vid .vid-content{
+    position: relative;
+    top:57%;
+    left:2%;
+}
+.sec-3 .vid .vid-content h5{
+    font-size: 17px;
+    font-weight: bold;
+    width: 80%;
+}
+.sec-3 .vid .vid-content span{
+    font-size: 13px;
+}
+.sec-3 .vid-1{
+    background-image: url("./imgs/2-aa.jpeg");
+}
+.sec-3 .vid-2{
+    background-image: url("./imgs/2-bb.jpeg");
+}
+.sec-3 .vid-3{
+    background-image: url("./imgs/2-cc.jpeg");
+}
+.sec-3 .vid-4{
+    background-image: url("./imgs/2-dd.jpeg");
+}
+/******************************************************************************** section-4 ***************************************************************************/  
+.sec-4 .card{
+    background-color: #eb4a36;
+    border-radius:20px;
+    min-height: 35vh;
+    /* width:75% ; */
+    color: white;
+}
+.sec-4 .card .content{
+    width: 65%;
+    position: relative;
+    top:15%;
+    bottom:15%;
+    left:15%;
+    right:15%;
+    text-align: center;
+}
+.sec-4 .card form input{
+    width:80%;
+    /* width:650px; */
+    height:50px;
+    border:3px white solid;
+    background-color: #eb4a36; 
+}
+.sec-4 .card form input::placeholder{
+    background-color: #eb4a36;
+    color: #f9f5f4;
+    padding-left: 15px;
+}
+.sec-4 .card form button{
+    background-color:#fbc418;
+    width: 140px;
+    height: 50px; 
+    border:3px white solid;
+}
+/******************************************************************************** footer ******************************************************************************/ 
+.footer .f-row .logo{
+    text-decoration: none;
+    font-family:'Leckerli One','cursive' !important;
+    color:#eb4a36;
+    font-size: 25px;
+}
+.footer .f-row{
+gap:55%;
+}
+.footer .f-row .contact-icons{
+    width: 175px;
+    text-align:left;
+}
+a{
+    text-decoration: none; 
+}
+.footer .s-row  a{
+    color: #000;
+}
+.footer .s-row  a:hover{
+    color:gray;
+}
